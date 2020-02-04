@@ -161,12 +161,12 @@ int main(){
     PGMdata* data = &pgmdata;
 
     int i=0, j=0;
-    const char *filename = "images/lena256.pgm";
+    const char *filename = "images/boats.pgm";
     data = readPGM(filename, data);
 
     int threshold = get_otsu_threshold(data);
     
-    const char *output_file = "output/lena256.pgm";
+    const char *output_file = "output/lighthouse.pgm";
     writePGM(output_file, data, threshold);
     return 0;
 }
