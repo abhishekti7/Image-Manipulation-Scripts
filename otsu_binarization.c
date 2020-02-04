@@ -161,10 +161,7 @@ int main(){
     PGMdata* data = &pgmdata;
 
     int i=0, j=0;
-    const char *filename;
     const char *filename = "images/lena256.pgm";
-    printf("Enter file name:\n");
-    scanf("%c", filename);
     data = readPGM(filename, data);
 
     int threshold = get_otsu_threshold(data);
