@@ -228,8 +228,8 @@ int main(){
     PGMdata* data = &pgmdata;
 
     int i=0, j=0;
-    const char *filename = "images/boats.pgm";
-    const char *output_file = "output/otsu_local_boats.pgm";
+    const char *filename = "images/cameraman.pgm";
+    const char *output_file = "output/otsu_local_cameraman.pgm";
     data = readPGM(filename, data);
 
     otsu_localised_binarization(output_file, data);
